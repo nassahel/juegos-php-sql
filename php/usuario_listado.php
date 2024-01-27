@@ -16,13 +16,14 @@ mysqli_stmt_execute($sentencia);
 mysqli_stmt_bind_result($sentencia, $id, $usuarioBD, $tipoBD, $fotoBD);
 ?>
 
-<main class="container">
+<main class="container-fluid bg-beige d-flex flex-grow-1">
     <section>
         <article class="row">
             <section class="menu_tmp">
+                <a class="btn btn-dark" href="juego_listado.php"> < Volver</a>
                 <a class="btn btn-dark" href="usuario_alta.php">+ Alta usuario</a>
             </section>
-            <table class="table table-bordered table-hover table-striped w-auto">
+            <table class="table table-bordered table-hover table-striped w-75">
                 <caption class="caption-top text-center bg-dark">Listado de usuarios</caption>
                 <tr>
                     <th class="bg-secondary text-white">Foto</th>

@@ -17,7 +17,7 @@ if($_SESSION['foto'] == '' ){
     <!--Modificar la linea siguiente: agregue la foto, el nombre de usuario en el p y el enlace a la página de cerrar sesión-->
 
     <img src="../img/usuarios/<?php echo $fotoBD ?>" alt="">
-    <p><?php echo $_SESSION['usuario'] ?></p> <a href="cerrar_sesion.php" class="btn btn-secondary border">cerrar sesión</a>
+    <p class="text-white"><?php echo $_SESSION['usuario'] ?></p> <a href="cerrar_sesion.php" class="btn btn-secondary border">cerrar sesión</a>
 </section>
 <ul class="navbar-nav text-center">
     <li class="nav-item bg-warning mb-2">

@@ -8,13 +8,12 @@ if (($_SESSION['tipo'] !== "Administrador")) {
 }
 ?>
 
-<main class="container">
-    <section>
-        <article>
+<main class="container-fluid bg-beige d-flex flex-grow-1">
+     <article class="container-fluid">
             <section class="menu_tmp">
                 <p>Opción: Juegos > Alta</p>
             </section>
-            <form action="juego_alta_ok.php" method="post" enctype="multipart/form-data" class="bg-warning border-info">
+            <form action="juego_alta_ok.php" method="post" enctype="multipart/form-data" class="bg-warning border-info col-11 col-md-6 col-lg-6 col-xl-3">
                 <legend class="bg-dark border-info text-center">Alta Juego</legend>
                 <section>
                     <label for="titulo" class="form-label">Título</label>
@@ -32,12 +31,12 @@ if (($_SESSION['tipo'] !== "Administrador")) {
                     <label for="portada" class="form-label">Portada</label>
                     <input type="file" name="portada" id="portada" class="form-control border-warning">
                     <section class="text-center">
+                        <a class="btn btn-dark" href="juego_listado.php"> < Volver</a>
                         <input type="submit" name="enviar" value="Confirmar" class="btn btn-dark mt-3 mb-3">
                     </section>
                 </section>
             </form>
         </article>
-    </section>
 </main>
 
 <?php

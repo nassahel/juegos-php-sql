@@ -21,7 +21,7 @@ if ($conexion && !empty($_GET['id'])) {
     $cantFilas = mysqli_stmt_num_rows($sentencia);
 
     if ($cantFilas > 0) {
-        echo '<article class="container text-center mt-5 p-3"><h2 class="mb-4">Eliminar Juego</h2>';
+        echo '<article class="col-8 col-lg-4 m-auto text-center mt-5 p-3"><h2 class="mb-4">Eliminar Juego</h2>';
 
         while (mysqli_stmt_fetch($sentencia)) {
             echo '<p class="mb-4">Esta seguro de eliminar al juego <strong>' . $titulo . '</strong>?</p>';

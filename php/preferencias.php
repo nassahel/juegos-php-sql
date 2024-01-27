@@ -8,11 +8,12 @@ session_start();
     }
 ?>
 
-<main class="container">
-    <section class="row">
-        <section class="col-3 menu pt-4">
+<main class="d-flex flex-grow-1 bg-beige">
+    <section class="row col-12 px-0">
+        <section class="col-2 menu pt-4">
             <?php require("menu.php"); ?>
         </section>
+        <article class="col-8 mx-auto pt-2">
         <article class="col-9 listado pt-2">
             <h2 class="col-12 text-center mt-4">Preferencias</h2>
             <!-- Obtener los géneros mediante una consulta SQL (si así lo prefiere) -->
