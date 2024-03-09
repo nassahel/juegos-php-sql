@@ -24,14 +24,13 @@ if ($conexion && isset($_GET['id'])) {
 }
 ?>
 
-<main class="container">
-    <section>
-        <article>
-            <section class="menu_tmp">
-                <p>Opción: Usuarios > Editar</p>
-            </section>
-            <form action="ejecutar_modificar.php" method="post" class="bg-success border-info text-white" enctype="multipart/form-data">
-                <legend class="bg-dark border-info text-center">Modificar usuario</legend>
+<main class="container-fluid bg-verde d-flex flex-grow-1 p-0">
+    <article class="container-fluid p-0">
+        <section class="text-light text-center fw-bold mb-5">
+            <p class="bg-success py-2 ">Opción: Usuarios > Editar</p>
+        </section>
+            <form action="ejecutar_modificar.php" method="post" class="bg-success border-info col-10 col-md-6 col-lg-3 rounded overflow-hidden text-white" enctype="multipart/form-data">
+                <legend class="bg-dark border-info text-center">Editar usuario</legend>
                 <section>
                     <label for="usuario" class="form-label">Usuario</label>
                     <input type="text" name="usuario" id="usuario" value="<?php echo $usuario ?>" required maxlength="45" class="form-control border-warning">
@@ -50,9 +49,9 @@ if ($conexion && isset($_GET['id'])) {
                         <input type="hidden" name="fotoActual" id="fotoActual" value="<?php echo $foto ?>">
                         <!-- Id oculto ---------------------------- -->
                         <input type="hidden" name="id" id="id" value="<?php echo $id ?>">
-                        <input type="submit" name="enviar" value="Actualizar" class="btn btn-dark mt-3 mb-3">
-
+                        
                         <a class="btn btn-danger" href="usuario_listado.php">Volver</a>
+                        <input type="submit" name="enviar" value="Actualizar" class="btn btn-dark mt-3 mb-3">
                     </section>
                 </section>
             </form>

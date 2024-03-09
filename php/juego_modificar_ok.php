@@ -10,6 +10,12 @@ if (!isset($_SESSION['usuario'])) {
 include 'conexion.php';
 $conexion = conectar();
 
+?>
+
+<main class="container-fluid bg-verde justify-content-center align-items-center d-flex flex-grow-1 p-0">
+
+<?php
+
 if ($conexion && isset($_POST['id'])) {
     $id = $_POST['id'];
     $titulo = $_POST['titulo']; //crash bandicot
@@ -41,14 +47,18 @@ if ($conexion && isset($_POST['id'])) {
     $estado = mysqli_stmt_execute($sentencia);
 
     if ($estado) {
-        echo '<article class="container text-center mt-5 p-3"><p class="mb-4">Juego editado con éxito</p> </article>';
+        echo '<article class="container text-center mt-5 p-3 bg-light rounded col-10 col-lg-4 pb-0"><p class="mb-4">Juego editado con éxito 😁</p> </article>';
         header("refresh:2;url=juego_listado.php");
     }
 } else {
-    echo '<article class="container text-center mt-5 p-3"><p class="mb-4">No se pudo editar Juego</p> </article>';
+    echo '<article class="container text-center mt-5 p-3 bg-light rounded col-10 col-lg-4 pb-0"><p class="mb-4">No se pudo editar Juego 😥</p> </article>';
     header("refresh:2;url=juego_listado.php");
 }
 
 desconectar($conexion);
+?>
 
+</main>
+
+<?php
 require("pie.php");

@@ -2,8 +2,20 @@
 $ruta = '';
 require("php/encabezado.php");
 ?>
-<main class="bg-beige d-flex justify-content-center align-items-center p-0 flex-grow-1">
-        <form action="php/logueo.php" method="post" class="col-12 col-md-8 col-lg-5 col-xl-4">
+<main class="d-flex bg-verde flex-column align-items-center p-0 flex-grow-1">
+    <header class="">
+        <section class="d-flex align-items-center justify-content-around">
+            <img src="img/kirby.gif" width="55" alt="">
+            <img src="img/mario.gif" width="55" alt="">
+            <h1 class="p-0 text-center display-5 fw-bold">JUEGAZOS</h1>
+            <img src="img/yoshi.gif" width="55" alt="">
+            <img src="img/pacman.gif" width="55" alt="">
+
+        </section>
+        <img src="img\banner.webp" alt="" class="img-fluid">
+    </header>
+    <section class="container-fluid d-flex flex-grow-1 justify-content-center align-items-center">
+        <form action="php/logueo.php" method="post" class="col-12 col-md-8 col-lg-5 col-xl-3">
             <fieldset class="card bg-dark col-11 md-col-6 mx-auto text-white" style="border-radius: 1rem;">
                 <section class="card-body p-5 text-center">
                     <h2 class="fw-bold mb-2">INICIAR SESIÓN</h2>
@@ -23,7 +35,10 @@ require("php/encabezado.php");
                 </section>
             </fieldset>
         </form>
-    </main>
+
+    </section>
+
+</main>
 <?php
 require("php/pie.php");
 ?>

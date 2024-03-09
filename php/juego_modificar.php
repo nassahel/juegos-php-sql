@@ -29,14 +29,13 @@ if ($conexion && isset($_GET['id'])) {
 }
 ?>
 
-<main class="container">
-    <section>
-        <article>
-            <section class="menu_tmp">
-                <p>Opción: Juegos > Modificar</p>
-            </section>
-            <form action="juego_modificar_ok.php" method="post" enctype="multipart/form-data" class="bg-warning border-info">
-                <legend class="bg-dark border-info text-center">Alta Juego</legend>
+<main class="container-fluid bg-verde d-flex flex-grow-1 p-0">
+    <article class="container-fluid p-0">
+        <section class="text-light text-center fw-bold mb-5">
+            <p class="bg-success py-2 ">Opción: Juegos > Editar</p>
+        </section>
+            <form action="juego_modificar_ok.php" method="post" enctype="multipart/form-data" class="bg-warning rounded overflow-hidden col-10 col-md-6 col-lg-3 border-info">
+                <legend class="bg-dark border-info text-center">Editar Juego</legend>
                 <section>
                     <label for="titulo" class="form-label">Título</label>
                     <input type="text" name="titulo" id="titulo" value="<?php echo $titulo ?>" placeholder="Titulo" required maxlength="45" class="form-control border-warning">
@@ -55,6 +54,8 @@ if ($conexion && isset($_GET['id'])) {
                     <input type="hidden" name="id" id="id" value="<?php echo $id ?>">
                     <input type="hidden" name="portadaActual" id="portadaActual" value="<?php echo $portada ?>">
                     <section class="text-center">
+                    <a class="btn btn-dark" href="juego_listado.php">
+                        < Volver</a>
                         <input type="submit" name="enviar" value="Confirmar" class="btn btn-dark mt-3 mb-3">
                     </section>
                 </section>

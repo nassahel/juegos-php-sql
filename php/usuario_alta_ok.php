@@ -35,16 +35,25 @@ if (!empty($_POST['usuario']) && !empty($_POST['pass']) && !empty($_POST['tipo']
         $q = mysqli_stmt_execute($sentencia); //true o false
 
         if ($q) {
-            echo '<article class="container text-center mt-5 p-3"><p class="mb-4">Usuario guardado!!</p> </article>';
+            echo '<main class="container-fluid bg-verde justify-content-center align-items-center d-flex flex-grow-1 p-0">
+            <article class="container text-center mt-5 p-3 bg-light rounded col-10 col-lg-4 pb-0"><p class="mb-4">Usuario guardado con éxito!</p> </article>
+            </main>';
         header("refresh:2;url=usuario_listado.php");
         } else {
-            echo '<p>Error Al guardar</p>';
+            echo '<main class="container-fluid bg-verde justify-content-center align-items-center d-flex flex-grow-1 p-0">
+            <article class="container text-center mt-5 p-3 bg-light rounded col-10 col-lg-4 pb-0"><p class="mb-4">Hubo un error al guardar el usuario.</p> </article>
+            </main>';
             header("refresh:2;url=usuario_listado.php");
         }
         desconectar($conexion);
     }
 } else {
-    echo '<p>Faltan completar campos</p>';
+    echo '
+    <main class="container-fluid bg-verde justify-content-center align-items-center d-flex flex-grow-1 p-0">
+    <article class="container text-center mt-5 p-3 bg-light rounded col-10 col-lg-4 pb-0"><p class="mb-4">Faltan completar campos</p> </article>
+    </main>';
+    header("refresh:2;url=usuario_listado.php");
+
 }
 
 require("pie.php");

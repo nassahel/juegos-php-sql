@@ -9,13 +9,13 @@ if (!isset($_SESSION['usuario'])) {
 
 ?>
 
-<main class="d-flex flex-grow-1 bg-beige">
+<main class="d-flex flex-grow-1 bg-verde">
     <section class="row col-12 px-0">
-        <section class="col-2 menu pt-4">
+        <section class="col-12 col-md-4 col-xl-2 menu pt-4">
             <?php require("menu.php"); ?>
         </section>
         <article class="col-8 mx-auto pt-2">
-            <h2 class="col-12 text-center bg-dark text-white mb-4 py-4 ">FAVORITOS</h2>
+            <h2 class="col-12 text-center bg-dark text-white mb-4 py-4 ">JUEGOS FAVORITOS</h2>
             <section class="d-flex flex-row flex-wrap align-items-center gap-5">
 
                 <?php

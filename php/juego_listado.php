@@ -9,9 +9,9 @@ if (empty($_SESSION['usuario'])) {
 
 ?>
 
-<main class="d-flex flex-grow-1 bg-beige">
+<main class="d-flex flex-grow-1 bg-verde">
     <section class="row col-12 px-0">
-        <section class="col-2 menu pt-4">
+        <section class="col-12 col-md-4 col-xl-2 menu pt-4">
             <?php require("menu.php"); ?>
         </section>
         <article class="col-8 mx-auto pt-2">
@@ -36,7 +36,7 @@ if (empty($_SESSION['usuario'])) {
                         while (mysqli_stmt_fetch($sentencia)) {
                             $portadaBD == '' ? $portadaBD = 'portada_default.png' : $portadaBD = $portadaBD;
                 ?>
-                            <section class="card overflow-hidden" style="width: 22rem; height: 27rem">
+                            <section class="card overflow-hidden shadow" style="width: 22rem; height: 27rem">
                             <figure class="h-50 d-flex justify-content-center">
                                 <img src="../img/portadas/<?php echo $portadaBD ?>" class="object-fit-scale w-100" />
                             </figure>

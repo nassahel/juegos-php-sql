@@ -5,7 +5,7 @@ function conectar()
     $servidor = 'localhost';
     $usuario = 'root';
     $clave = '';
-    $bd = 'labo2';
+    $bd = 'juegazos';
 
     set_error_handler(function() 
     {   throw new Exception("Error");

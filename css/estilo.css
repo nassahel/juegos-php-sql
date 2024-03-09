@@ -1,13 +1,3 @@
-/*
-Paleta de colores:
-#5F0087 morado oscuro
-#BA19FF morado claro
-#9400D3 morado normal
-#cda4f3 morado más claro
-
-#638700 verde oscuro
-#9BD400 verde claro
-*/
 
 * {
     margin: 0;
@@ -15,12 +5,17 @@ Paleta de colores:
     border: 0;
 }
 
+header{
+    background-color: #fc4a1a;
+    color: white;
+}
+
 main {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 article {
-    background-color:beige;
+    background-color:#4abdac;
     padding-bottom: 3em;
 }
 
@@ -82,8 +77,19 @@ td {
     width: calc(100% / 3);
 }
 
+.nav-item {
+    background-color:#fc4a1a;
+    transition-duration: 300ms;
+    color: white;
+}
+
+.nav-item:hover {
+    background-color:#cf3e17;
+    transition-duration: 300ms;
+}
+
 .menu {
-    background-color:rgb(124, 124, 114);
+    background-color:#f7b733;
 }
 
 .menu section {
@@ -102,7 +108,6 @@ td {
 }
 
 
-
-.bg-beige {
-    background-color: beige;
+.bg-verde {
+    background-color: #4abdac;
 }

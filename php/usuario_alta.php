@@ -8,12 +8,12 @@ if (($_SESSION['tipo'] !== "Administrador")) {
 }
 ?>
 
-<main class="container-fluid bg-beige d-flex flex-grow-1">
-    <article class="container-fluid">
-        <section class="menu_tmp">
-            <p>Opción: Usuarios > Alta</p>
+<main class="container-fluid bg-verde d-flex flex-grow-1 p-0">
+    <article class="container-fluid p-0">
+        <section class="text-light text-center fw-bold mb-5">
+            <p class="bg-success py-2 ">Opción: Usuarios > Alta</p>
         </section>
-        <form action="usuario_alta_ok.php" method="post" enctype="multipart/form-data" class="bg-secondary border-info col-11 col-md-6 col-lg-6 col-xl-3">
+        <form action="usuario_alta_ok.php" method="post" enctype="multipart/form-data" class="bg-danger border-info rounded overflow-hidden col-11 col-md-6 col-lg-6 col-xl-3">
             <legend class="bg-dark border-info text-center">Alta usuario</legend>
             <section>
                 <label for="usuario" class="form-label">Usuario</label>
