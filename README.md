@@ -17,4 +17,4 @@ This project was developed as part of the final work of the first year at the un
 
 ## Screenshots
 
-![App Screenshot](http://localhost:5173/assets/img/projects-img/juegazos.webp)
+![App Screenshot](https://nassahel-portfolio.vercel.app/assets/img/projects-img/juegazos.webp)
